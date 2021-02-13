@@ -15,13 +15,15 @@ The configuration file has to be stored as "...\ppmp2influxconnector.toml":
 
 ```
 
-### Usage
-```bash
-python -m ppmp2influxconnector
-```
+
 
 # Build Docker
     docker build . -t ppmppmp2influxconnectorp2influx
 
 # run Docker
     docker run --rm -i -t ppmppmp2influxconnectorp2influx /bin/sh
+
+### Usage
+```bash
+python -m ppmp2influxconnector
+```
