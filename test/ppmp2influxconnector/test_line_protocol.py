@@ -46,7 +46,7 @@ class Test(unittest.TestCase):
     def test_line_protocol(self):
         timestamps = []
 
-        with open('./test/ppmp2influx/debug.txt') as f:
+        with open('./test/ppmp2influxconnector/debug.txt') as f:
             for line in f:
                 # 'hda-100002.ho.de.bosch.com,test-tag=28 curve.angle=0.0 1552029873715035904\n'
                 timestamps.append(re.search('[0-9]{19}', line).group(0))
