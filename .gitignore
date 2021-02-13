@@ -1,0 +1,17 @@
+.history/*
+.env
+test/ppmp2influxconnector/__pycache__/*
+.pytest_cache/*
+test/ppmp2influxconnector/debug.txt
+ppmp2influxconnector/__pycache__/*
+.vscode/*
+permit
+permit.sha256
+
+dist/**
+build/**
+ppmp2influxconnector.egg-info/**
+.eggs/**
+__pycache__/**
+ppmp2influxconnector-env/**
+logs/**
