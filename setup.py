@@ -2,7 +2,7 @@ import setuptools
 
 NAME = "ppmp2influxconnector"
 
-DEPENDENCIES_GITHUB = [
+DEPENDENCIES_ARTIFACTORY = [
     'influxdb',
 ]
 
@@ -27,7 +27,7 @@ def generate_pip_links_from_url(url, version):
 
 # create pip compatible links
 DEPENDENCIES_GITHUB = [generate_pip_links_from_url(url, version) for url, version in DEPENDENCIES_GITHUB.items()]
-DEPENDENCIES = DEPENDENCIES_GITHUB + DEPENDENCIES_GITHUB
+DEPENDENCIES = DEPENDENCIES_ARTIFACTORY + DEPENDENCIES_GITHUB
 
 with open("README.md", "r") as fh:
     LONG_DESCRIPTION = fh.read()
